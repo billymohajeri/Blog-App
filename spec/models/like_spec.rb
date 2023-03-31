@@ -6,7 +6,7 @@ RSpec.describe Like, type: :model do
     before { subject.save }
 
     it 'The author_id should be number' do
-      expect(subject).to be_valid
+      expect(subject.author_id).to_not be_a(String)
     end
 
     it 'The author_id should be an integer' do

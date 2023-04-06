@@ -1,1 +1,10 @@
-<h1>Hi from Posts page 📝</h1>
+<section class="full-post-section">
+  <div class="full-post border-black">
+    <h2>Post</h2>
+    <p class="post-likes-comments">Comments: <%= @post.comments_counter %>, Likes: <%= @post.likes_counter %></p>
+    <p><%= @post.text %></p>
+  </div>
+  <div class="comments">
+    <%= render "shared/comment", post: @post %>
+  </div>
+</section>

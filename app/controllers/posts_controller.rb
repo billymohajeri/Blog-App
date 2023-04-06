@@ -6,5 +6,30 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.find(params[:id])
+    @like = Like.new
+  end
+
+  def new
+    @post = Post.new
+  end
+
+  def create
+    @post = Post.new(post_params)
+    @post.author = current_user
+    @post.comments_counter = 0
+    @post.likes_counter = 0
+    if @post.save
+      flash[:notice] = 'Post created successfully!'
+      redirect_to user_posts_path(current_user)
+    else
+      flash[:alert] = "Couln't create post!"
+      render :new, status: :unprocessable_entity
+    end
+  end
+
+  private
+
+  def post_params
+    params.require(:post).permit(:title, :text)
   end
 end

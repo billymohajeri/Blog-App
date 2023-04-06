@@ -83,3 +83,13 @@ section {
 .back {
   text-decoration: underline;
 }
+
+.comment-btn {
+  /* width: 120px; */
+  padding: 8px 10px;
+  font-size: 0.9rem;
+  align-self: center;
+  border: 1px solid black;
+  font-weight: 600;
+  cursor: pointer;
+}

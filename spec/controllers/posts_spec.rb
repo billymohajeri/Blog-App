@@ -13,7 +13,7 @@ RSpec.describe 'PostsController', type: :request do
     end
 
     it 'response body includes correct placeholder text' do
-      expect(response.body).to include('Hi from Posts page')
+      expect(response.body).to include('Pagination')
     end
   end
 

@@ -1,6 +1,8 @@
 <section>
   <%= render partial: "shared/user", locals: { user: @user } %>
-  <% @posts.each do |post| %>
+  
+    <% @user.posts.includes(:author).each_with_index do |post, index| %>
+
     <%= link_to user_post_path(user_id: post.author.id, id: post.id), class: "post" do %>
       <%= render "shared/post", post: post %>
       <div class="comments">

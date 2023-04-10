@@ -23,10 +23,6 @@ RSpec.describe 'Post testing', type: :feature do
       expect(page).to have_content(@post.author.posts_counter)
     end
 
-    # it 'should render post title' do
-    #   expect(page).to have_content(@post.title)
-    # end
-
     it 'should render post text' do
       expect(page).to have_content(@post.text)
     end

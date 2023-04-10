@@ -1,7 +1,8 @@
 RSpec.describe 'User testing', type: :feature do
   describe 'index page' do
     before(:example) do
-      @user = User.create(name: 'Amen', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'Engineer', posts_counter: 1)
+      @user = User.create(name: 'Amen', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'Engineer',
+                          posts_counter: 1)
       visit users_path
     end
 
@@ -28,6 +29,4 @@ RSpec.describe 'User testing', type: :feature do
       expect(page).to have_current_path(user_path(@user.id))
     end
   end
-
-
 end

@@ -12,7 +12,11 @@ RSpec.describe 'User testing', type: :feature do
       end
     end
 
-
+    it 'renders the profile picture of each user.' do
+      User.all.each do |user|
+        expect(page).to have_xpath("//img[@src = '#{user.photo}' ]")
+      end
+    end
 
     it 'should render correct posts number ' do
       User.all.each do |user|

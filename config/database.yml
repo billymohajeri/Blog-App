@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: ror_blog_app
+  database: ror_blog_app4
   username: postgres
   password: <%= ENV["ROR_BLOG_APP_DATABASE_PASSWORD"] %>
   host: localhost
@@ -59,7 +59,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: ror_blog_app
+  database: ror_blog_app4
   username: postgres
   password: <%= ENV["ROR_BLOG_APP_DATABASE_PASSWORD"] %>
   host: localhost

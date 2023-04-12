@@ -1,16 +1,32 @@
-<section class="full-post-section">
-  <div class="full-post border-black">
-    <h2>Post <%= @post.id %> by <%= @post.author.name %></h2>
-    <p class="post-likes-comments">Comments: <%= @post.comments_counter %>, Likes: <%= @post.likes_counter %></p>
+<section class= 'full-post-section'>
+<div class='full-post border-black'>
+  <h2>Post #<%= @post.id %> by <%= @post.author.name %></h2>
+  <p class="post-likes-comments">Comments: <%= @post.comments_counter %>, Likes: <%= @post.likes_counter %></p>
     <p><%= @post.text %></p>
-        <div class="like-comment-btn">
-      <%= form_with model: @like, url: user_post_likes_path(user_id: @post.author.id, post_id: @post.id), local: true do |form| %>
-        <%= form.submit "Add a like", class: "btn" %>
+  
+</div>
+
+<div class="like-comment-btn">
+<%= form_with model: @like, url: user_post_likes_path(user_id: @post.author.id, post_id: @post.id), local: true do |form| %>
+  <%= form.submit "Like", class: "btn" %>
+<% end %>
+<button type="button" class="btn"><%= link_to "Add a comment", new_user_post_comment_path(user_id: @post.author.id, post_id: @post.id)  %></button>
+</div>
+
+<div class='comments'>
+  <% @post.comments.each do |comment| %>
+    <p><%= comment.author.name %>: <%= comment.text %></p>
+    <% if comment.author == current_user || @post.author == current_user %>
+      <%= form_for([@user, @post, comment], method: :delete) do |f| %>
+        <%= f.submit 'Delete comment', class: "comment-btn" %>
       <% end %>
-      <button type="button" class="btn"><%= link_to "Add a comment", new_user_post_comment_path(user_id: @post.author.id, post_id: @post.id)  %></button>
-    </div>
-  </div>
-  <div class="comments">
-    <%= render "shared/comment", post: @post %>
-  </div>
+    <% end %>
+  <% end %>
+</div>
+
+<% if @post.author == current_user %>
+  <%= form_with url: user_post_path(@user, @post), method: :delete do |form| %>
+    <%= form.submit "Delete Post" , class: "btn"%>
+  <% end %>
+<% end %>
 </section>

@@ -100,6 +100,12 @@ rails s
 - Twitter: [@BillyMohajeri](https://twitter.com/BillyMohajeri)
 - LinkedIn: [@BillyMohajeri](https://www.linkedin.com/in/billymohajeri)
 
+👤 **Abdul Saboor Sohaib**
+
+- GitHub: [![SaboorSohaib](https://img.shields.io/badge/-SaboorSohaib-white?logo=GitHub&logoColor=181717&style=plastic)](https://github.com/SaboorSohaib)
+- Twitter: [![absaboorsohaib](https://img.shields.io/badge/-absaboorsohaib-blue?logo=Twitter&logoColor=skyBlue&style=plastic)](https://twitter.com/absaboorsohaib)
+- LinkedIn: [![abdul-saboor-sohaib](https://img.shields.io/badge/-AbdulSaboorSohaib-white?logo=LinkedIn&logoColor=181717&style=plastic)](https://www.linkedin.com/in/abdul-saboor-sohaib/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>

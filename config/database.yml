@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: ror_blog_app4
+  database: ror_blog_app5
   username: postgres
   password: <%= ENV["ROR_BLOG_APP_DATABASE_PASSWORD"] %>
   host: localhost

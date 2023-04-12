@@ -44,6 +44,8 @@ gem 'bootsnap', require: false
 
 gem 'rubocop', '>= 1.0', '< 2.0'
 
+gem 'cancancan'
+
 gem 'dotenv', '~> 2.1', '>= 2.1.1'
 # Use Sass to process CSS
 # gem "sassc-rails"

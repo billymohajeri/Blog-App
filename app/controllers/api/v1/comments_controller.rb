@@ -1,4 +1,5 @@
 class Api::V1::CommentsController < ApplicationController
+  skip_before_action :authenticate_user!
   def index
     post = Post.find(params[:post_id])
     comments = post.comments
@@ -14,5 +15,11 @@ class Api::V1::CommentsController < ApplicationController
     else
       render json: { status: 'Failure', error: @comment.errors.full_messages }
     end
+  end
+
+  private
+
+  def comment_params
+    params.require(:comment).permit(:text)
   end
 end

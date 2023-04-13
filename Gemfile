@@ -46,7 +46,7 @@ gem 'rubocop', '>= 1.0', '< 2.0'
 
 gem 'cancancan'
 
-gem 'active_model_serializers', '~> 0.10.13'
+gem 'active_model_serializers', '~> 0.10.2'
 
 gem 'dotenv', '~> 2.1', '>= 2.1.1'
 # Use Sass to process CSS

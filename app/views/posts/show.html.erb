@@ -7,7 +7,7 @@
 </div>
 
 <div class="like-comment-btn">
-<%= form_with model: @like, url: user_post_likes_path(user_id: @post.author.id, post_id: @post.id), local: true do |form| %>
+<%= form_with model: @like, url:  user_posts_path(user_id: @post.author.id, post_id: @post.id), local: true do |form| %>
   <%= form.submit "Like", class: "btn" %>
 <% end %>
 <button type="button" class="btn"><%= link_to "Add a comment", new_user_post_comment_path(user_id: @post.author.id, post_id: @post.id)  %></button>

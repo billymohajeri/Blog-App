@@ -73,6 +73,8 @@ end
 
 gem 'devise'
 
+gem 'rswag'
+
 group :development, :test do
   gem 'rspec-rails'
 end

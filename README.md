@@ -29,7 +29,6 @@
     <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
 </ul>
 
-
 ### Key Features <a name="key-features"></a>
 
 - **Show user posts**
@@ -45,14 +44,13 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 ## 💻 Getting Started <a name="getting-started"></a>
 
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run this project you need:
+To run this project you need:
 
 - [Ruby on Rails](https://rubyonrails.org/) installed and running. To get more information, read the [installation guide](https://guides.rubyonrails.org/).
 

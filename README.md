@@ -4,7 +4,6 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-    - [🎥 Presentation](#video-link)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -35,12 +34,6 @@
 - **Show post comments**
 - **Show post likes**
 - **Show user info**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 📺 Presentation <a name="video-link"></a>
-
-[No presentation yet...]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
